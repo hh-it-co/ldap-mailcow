@@ -9,5 +9,6 @@ COPY api.py filedb.py syncer.py ./
 VOLUME [ "/db" ]
 VOLUME [ "/conf/dovecot" ]
 VOLUME [ "/conf/sogo" ]
+VOLUME [ "/ssl" ]
 
 ENTRYPOINT [ "python3", "syncer.py" ]
